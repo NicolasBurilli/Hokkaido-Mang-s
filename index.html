@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hokkaido Mangá</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header class="cabecalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabecalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Shōnen</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Shōujo</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Josei</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Seinen</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Kodomo</a>
+                </li>
+            </ul>
+            <img src="img/Logo.png" alt="Logo da Hokkaido mangá" class="container__imagem">
+            <h1 class="container__titulo"><b class="container__titulo--negrito">Hokkaido</b>Mangá</h1>
+        </div>
+
+        <ul class="opcoes">
+            <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
+            <label for="opcoes-menu" class="opcoes__rotulo">
+                <li class="opcoes__item">Categorias</li>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Shōnen</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Shōujo</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Josei</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Seinen</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Kodomo</a>
+                </li>
+            </ul>
+
+            <li class="opcoes__item"><a href="#" class="opcoes__link">Favoritos</a></li>
+            <li class="opcoes__item"><a href="#" class="opcoes__link">Minha estante</a></li>
+        </ul>
+
+        <div class="container">
+            <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem container__imagem-transparente"></a>
+            <a href="#" class="container__link">
+                <img src="img/Compras.svg" alt="Carrinho de compras" class="container__imagem">
+                <p class="container__texto">Minha sacola</p>
+            </a>
+            <a href="#" class="container__link">
+                <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem">
+                <p class="container__texto">Meu Perfil</p>
+            </a>
+        </div>
+    </header>
+    <section class="banner">
+        <h2 class="banner__titulo">Já sabe por qual começar?</h2>
+        <p class="banner__texto">Encontre em nossa estante os melhores e mais novos mangás!</p>
+        <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+    </section>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Novos lançamentos</h2>
+        <!-- Slider main container -->
+        <div class="carrossel__container">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/1.png" alt="Mangá 1"></div>
+                    <div class="swiper-slide"><img src="img/2.png" alt="Mangá 2"></div>
+                    <div class="swiper-slide"><img src="img/3.png" alt="Mangá 3"></div>
+                    <div class="swiper-slide"><img src="img/4.png" alt="Mangá 4"></div>
+                    <div class="swiper-slide"><img src="img/5.png" alt="Mangá 5"></div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>     
+            </div>
+            <div class="card">
+                <!--1 linha-->
+                <div class="card__descricao">
+                    <!--1 Coluna-->
+                    <div class="descricao">
+                        <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+                        <h2 class="descricao__manga-titulo">Demon Slayer</h2>
+                        <p class="descricao__texto">Jovem spadachim que combate a onis.</p>
+                    </div>
+                    <!--2 Coluna-->
+                    <img src="img/Manga-sugerido.png" alt="manga demon slayer">
+                </div>
+
+                <!--2 linha-->
+                <div class="card__botoes">
+                    <!--1 Coluna-->
+                    <ul class="botoes">
+                        <li class="botoes_item"><img src="img/Favoritos.svg" alt="favoritar manga"></li>
+                        <li class="botoes_item"><img src="img/Compras.svg" alt="adicionar no carrinho de compras"></li>
+                    </ul>
+                    <!--2 Coluna-->
+                    <a href="#" class="botoes__ancora">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Mais Vendidos</h2>
+        <!-- Slider main container -->
+        <div class="carrossel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/5.png" alt="Mangá 1"></div>
+                <div class="swiper-slide"><img src="img/1.png" alt="Mangá 2"></div>
+                <div class="swiper-slide"><img src="img/4.png" alt="Mangá 3"></div>
+                <div class="swiper-slide"><img src="img/3.png" alt="Mangá 4"></div>
+                <div class="swiper-slide"><img src="img/2.png" alt="Mangá 5"></div>
+            </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>     
+            </div>
+            <div class="card">
+                <!--1 linha-->
+                <div class="card__descricao">
+                    <!--1 Coluna-->
+                    <div class="descricao">
+                        <h3 class="descricao__titulo">★ ★ ★ ★ ★</h3>
+                        <h2 class="descricao__manga-titulo">Autor do mês: Koyoharu Gotōge</h2>
+                        <p class="descricao__texto">Ela é uma mangaká japonesa e autora de Kimetsu no Yaiba.</p>
+                    </div>
+                    <!--2 Coluna-->
+                    <img src="img/croco.png" alt="autora Koyoharu Gotōge">
+                </div>
+
+                <!--2 linha-->
+                <div class="card__botoes">
+                    <!--1 Coluna-->
+                    <ul class="botoes">
+                        <li class="botoes_item"><img src="img/Favoritos.svg" alt="favoritar manga"></li>
+                        <li class="botoes_item"><img src="img/Compras.svg" alt="adicionar no carrinho de compras"></li>
+                    </ul>
+                    <!--2 Coluna-->
+                    <a href="#" class="botoes__ancora">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="topicos">
+        <h2 class="topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+        <ul class="topicos__lista">
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Shōnen</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Shōujo</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Josei</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Seinen</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Seijin</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Kodomo</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Ecchi</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Yuri</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="contato">
+        <div class="contato__descricao">
+            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+            <p class="contato__texto">Atualizações de mangás, novos, promoções e outros.</p>
+        </div>
+        <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+    </section>
+
+    <hr/>
+
+    <footer class="rodape">
+        <h2 class="rodape__titulo">Grupo Hokkaido</h2>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
+</body>
+</html>
